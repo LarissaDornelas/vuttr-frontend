@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ActionPanel } from "components";
+import { ActionPanel, Card } from "components";
 import { Title, Subtitle, Container } from "./styles";
 
 const Home: React.FC = () => {
@@ -9,6 +9,11 @@ const Home: React.FC = () => {
       <Title>vuttr</Title>
       <Subtitle>Very Useful Tools to Remember</Subtitle>
       <ActionPanel />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
     </Container>
   );
 };

@@ -6,11 +6,11 @@ import { ActionWrapper, Container } from "./styles";
 const ActionPanel: React.FC = () => {
   return (
     <Container>
-      <ActionWrapper flex={3} justify="space-between">
+      <ActionWrapper flex={4} justify="space-between">
         <SearchBar />
         <Checkbox />
       </ActionWrapper>
-      <ActionWrapper>
+      <ActionWrapper justify="flex-end">
         <Button />
       </ActionWrapper>
     </Container>

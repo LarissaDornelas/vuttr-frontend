@@ -1,9 +1,14 @@
 import React from "react";
 
-import { Container } from "./styles";
+import {add} from 'assets/icons'
+import { Container, Icon } from "./styles";
 
 const Button: React.FC = () => {
-  return <Container onClick={() => {}}>Add</Container>;
+  return <Container onClick={() => {}}>
+    <Icon src={add} alt="add"/>
+    Add
+    
+    </Container>;
 };
 
 export default Button;

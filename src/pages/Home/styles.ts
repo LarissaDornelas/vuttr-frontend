@@ -21,3 +21,4 @@ export const Subtitle = styled.h2`
   margin-bottom: 40px;
   color: ${theme.colors.primary};
 `;
+
