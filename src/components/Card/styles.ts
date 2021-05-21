@@ -3,7 +3,6 @@ import { theme } from "styles/theme";
 
 export const Container = styled.div`
   width: 100%;
-  max-height: 170px;
   padding: 20px;
   background-color: #ffffff;
   box-shadow: 0px 10px 10px #0000000d;
@@ -25,6 +24,10 @@ export const RemoveButton = styled.button`
   border: none;
   cursor: pointer;
   display: flex;
+
+  &:hover{
+    opacity: 0.5;
+  }
 `;
 
 export const Icon = styled.img`

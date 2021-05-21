@@ -1,14 +1,16 @@
 import React from "react";
 
-import {add} from 'assets/icons'
 import { Container, Icon } from "./styles";
+import { IButton } from "./types";
 
-const Button: React.FC = () => {
-  return <Container onClick={() => {}}>
-    <Icon src={add} alt="add"/>
-    Add
-    
-    </Container>;
+const Button: React.FC<IButton> = (props) => {
+  const { children, icon, onClick } = props;
+  return (
+    <Container onClick={onClick} {...props}>
+      {icon && <Icon src={icon} alt="icon" />}
+      {children}
+    </Container>
+  );
 };
 
 export default Button;

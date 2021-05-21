@@ -1,11 +1,17 @@
 import React from "react";
 
 import { Container, Input, Label } from "./styles";
+import { ICheckbox } from "./types";
 
-const Checkbox: React.FC = () => {
+const Checkbox: React.FC<ICheckbox> = (props) => {
+  const { setValue } = props;
   return (
     <Container>
-      <Input />
+      <Input
+        onChange={(e) => {
+          setValue(e.target.checked);
+        }}
+      />
       <Label>search in tags only</Label>
     </Container>
   );

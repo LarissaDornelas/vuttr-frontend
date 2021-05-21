@@ -9,20 +9,21 @@ import {
   Description,
   Tags,
 } from "./styles";
+import { ICard } from "./types";
 
-const Card: React.FC = () => {
+const Card: React.FC<ICard> = (props) => {
+  const { tool, removeAction } = props;
+
   return (
     <Container>
-      <RemoveButton>
+      <RemoveButton onClick={() =>removeAction(tool.id)}>
         <Icon src={close} />
       </RemoveButton>
-      <Link href="http://notion.com">Notion</Link>
-      <Description>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-        ullamcorper odio et blandit elementum. Sed quis odio congue, finibus
-        eros vitae, tincidunt nibh.{" "}
-      </Description>
-      <Tags>#organization #planning #github</Tags>
+      <Link href={tool.link} target="_blank">
+        {tool.title}
+      </Link>
+      <Description>{tool.description}</Description>
+      <Tags>{tool.tags.map((tag) => `#${tag} `)}</Tags>
     </Container>
   );
 };

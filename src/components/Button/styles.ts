@@ -1,10 +1,17 @@
 import styled from "styled-components";
 import { theme } from "styles/theme";
 
-export const Container = styled.button`
-  background-color: ${theme.colors.blue};
-  color: ${theme.colors.darkWhite};
-  height: 50px;
+export const Container = styled.button<{
+  height?: number;
+  variant?: "primary" | "secondary";
+}>`
+  background-color: ${({ variant }) =>
+    variant === "secondary"
+      ? theme.colors.mostLightestBlue
+      : theme.colors.blue};
+  color: ${({ variant }) =>
+    variant === "secondary" ? theme.colors.blue : theme.colors.darkWhite};
+  height: ${({ height }) => (height ? height : 50)}px;
   flex: 1;
   display: flex;
   justify-content: center;
@@ -18,7 +25,10 @@ export const Container = styled.button`
   }
 
   &:hover {
-    background-color: ${theme.colors.darkBlue};
+    background-color: ${({ variant }) =>
+      variant === "secondary"
+        ? theme.colors.lightestBlue
+        : theme.colors.darkBlue};
   }
 `;
 

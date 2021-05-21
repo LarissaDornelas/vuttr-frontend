@@ -6,7 +6,7 @@ export const Container = styled.div`
   justify-content: space-between;
   flex: 1;
   height: 50px;
-  background-color: ${theme.colors.darkestWhite};
+  background-color: ${theme.colors.white};
   border-radius: 5px;
 `;
 
