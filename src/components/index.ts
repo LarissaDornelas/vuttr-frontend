@@ -6,6 +6,7 @@ import Card from "./Card";
 import Modal from "./Modal";
 import Loading from "./Loading";
 import Input from "./Input";
+import BannerCritical from "./BannerCritical";
 
 export {
   SearchBar,
@@ -16,4 +17,5 @@ export {
   Modal,
   Loading,
   Input,
+  BannerCritical,
 };

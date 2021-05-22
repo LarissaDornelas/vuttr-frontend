@@ -21,7 +21,6 @@ const RegisterToolForm: React.FC<IRegisterToolForm> = (props) => {
     validateOnChange: false,
   });
 
-  console.log({ issub: formik.isSubmitting });
   return (
     <Modal
       title="Add New Tool"

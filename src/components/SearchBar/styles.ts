@@ -8,6 +8,9 @@ export const Container = styled.div`
   height: 50px;
   background-color: ${theme.colors.white};
   border-radius: 5px;
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 `;
 
 export const IconWrapper = styled.div`

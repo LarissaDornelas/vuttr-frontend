@@ -21,6 +21,11 @@ export const ModalWrapper = styled.div`
   margin: 20px 0;
   position: relative;
   box-sizing: border-box;
+  @media (max-width: 800px) {
+    width: 100%;
+    height: 100%;
+    padding: 35px;
+  }
 `;
 
 export const Content = styled.div`
@@ -58,6 +63,11 @@ export const CloseButton = styled.button`
 
   &:hover {
     opacity: 0.5;
+  }
+
+  @media (max-width: 800px) {
+    right: 30px;
+    top: 30px;
   }
 `;
 
