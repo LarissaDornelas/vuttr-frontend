@@ -48,11 +48,6 @@ export const CloseButton = styled.button`
   &:hover {
     opacity: 0.5;
   }
-
-  @media (max-width: 800px) {
-    right: 30px;
-    top: 30px;
-  }
 `;
 
 export const CloseIcon = styled.img`

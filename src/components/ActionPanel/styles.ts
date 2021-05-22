@@ -29,5 +29,9 @@ export const ActionWrapper = styled.div<{
     align-items: flex-start;
     min-height: ${({ mobileHeight }) => (mobileHeight ? mobileHeight : 95)}px;
     width: 100%;
+
+    :first-child {
+      margin-bottom: 20px;
+    }
   }
 `;
