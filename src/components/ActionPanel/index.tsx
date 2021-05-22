@@ -13,7 +13,7 @@ const ActionPanel: React.FC<IActionPannel> = (props) => {
         <SearchBar setValue={handleSearch} />
         <Checkbox setValue={handleSearchByTag} />
       </ActionWrapper>
-      <ActionWrapper justify="flex-end">
+      <ActionWrapper justify="flex-end" mobileHeight={45}>
         <Button icon={add} onClick={onClickAddButton}>
           Add
         </Button>

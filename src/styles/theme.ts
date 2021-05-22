@@ -20,5 +20,6 @@ export const theme = {
     mostLightestBlue: "#E1E7FD",
     error: "#F95E5A",
     lightError: "#FEEFEE",
+    success: "#12DB89",
   },
 };
