@@ -96,7 +96,8 @@ const Home: React.FC = () => {
   const handleAdd = useCallback(
     async (values: IFormValues) => {
       try {
-        const tags = values.tags.split(",");
+        let tags = values.tags.split(",");
+        tags = tags.map((tag) => tag.trim());
 
         await api.post("/tools", { ...values, tags });
         handleFetchData();
